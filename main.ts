@@ -1,5 +1,6 @@
 let R = 0
 let strip = false
+let G = 0
 basic.showIcon(IconNames.Ghost)
 let strip2 = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 let B = 255
@@ -17,10 +18,10 @@ basic.forever(function () {
             basic.pause(800)
         }
     } else {
-        let G = 0
+        let G2 = 0
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 255)
         R += 1
         B += -1
-        strip2.showColor(neopixel.rgb(R, G, B))
+        strip2.showColor(neopixel.rgb(R, G2, B))
     }
 })
