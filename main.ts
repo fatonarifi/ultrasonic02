@@ -1,7 +1,7 @@
 let R = 0
 let strip = false
 let G = 0
-basic.showIcon(IconNames.Ghost)
+basic.showIcon(IconNames.Skull)
 let strip2 = neopixel.create(DigitalPin.P15, 4, NeoPixelMode.RGB)
 let B = 255
 basic.forever(function () {
